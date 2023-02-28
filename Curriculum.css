@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'orbitron';
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+
+
+    background-image: linear-gradient(
+        to bottom right,
+        #d30f0fce 0%,
+        #8f0808 20%,
+        #770404ce 40%,
+        #3f0404 60%,
+        #2e0202ce 80%
+       
+    );
+
+    background-size: 200% 200%;
+
+    animation: movimiento 60s linear infinite alternate-reverse;
+}
+
+@keyframes movimiento{
+    from {
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+
+.titulo {
+    margin-top: 20px;
+    width: 80%;
+    float: left;
+     
+}
+h1{
+    font-size: 6vw;
+    text-align: center;   
+}
+  
+.imagen {
+    width: 15%;
+    float: left;
+    margin-top: 5px;
+}
+
+img{
+    border: 3px solid black;
+    border-radius: 40%;
+}
+
+.btn{
+    border: 3px solid rgba(100,100,100,0.1);
+    margin-bottom: 20px;
+    padding: 17px;    
+    font-size: 1.7vw;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-size: 300%;
+    font-family: 'orbitron';
+    width: 90%;
+
+    background-image: linear-gradient(
+        to left, 
+        #85898a,
+        #1f1e24,
+        #9ea1a1
+        );
+    border: 3px solid black;
+   
+}
+
+.btn:hover{
+    background-position: center;
+    font-size: 2vw;
+}
+
+.botones{
+    padding: 5px;
+    float: left;
+    width: 40%;
+}
+
+.datos{  
+    display: none;
+    float: left;
+    width: 60%;
+}
+.experiencia{  
+    display: none;
+    float: left;
+    width: 60%;
+}
+
+.formacion{  
+    display: none;
+    float: left;
+    width: 60%;
+}
+.contacto{  
+    display: none;
+    float: left;
+    width: 60%;
+}
+ul{
+    margin: 30px;
+    padding-left: 25px;
+    text-align: left;    
+}
+
+li{
+    padding: 10px;
+    font-size: 2.3vw; 
+}
+
+p1{
+    font-size: 2vw;
+    padding: 10px;
+    color: white;
+}
+p{
+    font-size: 2.5vw;
+    color: rgb(150, 144, 144);
+    text-decoration: underline;
+}
+
+p2{
+    font-weight: bold;
+    color: rgb(150, 144, 144);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+    .titulo{
+        width: 100%; 
+    }
+    h1{
+        font-size: 7vw;
+    }
+    .botones{
+        width: 100%; 
+    }
+    .btn{
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 75%;
+        font-size: 3.5vw;
+    }
+    .btn:hover{
+        font-size: 4vw;
+    }
+    img{
+        width: 32%;
+    }
+    .datos,.experiencia,.formacion,.contacto,.imagen{
+        width: 100%;
+    }
+    ul{
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        width: 90%;
+    }
+    li{
+        margin-left:  20px;
+        padding: 10px;
+        text-align: left;
+        font-family: "orbitron";
+        font-size: 4vw; 
+    }
+    #lista-de-datos{
+        font-size: 2vw;
+    }
+    p{
+        font-size: 5vw;
+    }
+    p1{
+        font-size: 3vw;
+        padding: 5px;
+    }
+    
+}
